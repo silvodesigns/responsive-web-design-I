@@ -68,18 +68,17 @@ h1, h2, h3, h4, h5 {
 
 p{
 	font-family: 'Quicksand', sans-serif;
-	font-size:1em;
+	font-size:1em
 	
 }
 
 header{
 	width:100%;
 	background-color:lawngreen;
-	text-align:center;
 	display:flex;
 	flex-direction:column-reverse;
-	justify-content:center;
-	align-items:center;
+	text-align:center;
+
 }
 
 nav {
@@ -91,20 +90,19 @@ nav {
 
 }
 nav ol{
-	width:500px;
+	width:100%;
 }
 
 nav ol li{
 	
-	border-bottom:1px solid red;
+	border-bottom:1px solid white;
 	line-height: 60px;
   	height: 60px;
-  	text-align: center;
 	
 }
 
 nav ol:first-child{
-	border-top:1px solid red;
+	border-top:1px solid white;
 
 }
 nav a{
@@ -119,12 +117,13 @@ nav a:hover{
 
 .logo{
 	padding:25px 0;
+	margin:0 auto;
+	width:183px;
 	
 }
 
 #main-content{
-	max-width:876px;
-	margin: auto;
+	width:100%;
 }
 
 h1{
@@ -139,15 +138,17 @@ h2{
 	padding-top:150px;
 	padding-bottom:50px;
 	display:flex;
+	flex-direction:column;
+	justify-content:center;
 	
 }
 
-#display div{
-	width:438px;
-	align-items:center;
+#display img{
+	display:none;
 }
 
 .get-started {
+	margin:0 auto;
 	text-align:center;
 }
 
@@ -156,7 +157,7 @@ h2{
 	color:black;
 	text-decoration:none;
 	text-align:center;
-	padding:8px 20px;
+	padding:8px 0;
 	border:1px solid black;
 	width:160px;
 	font-size:16px;
@@ -167,27 +168,36 @@ h2{
 #articles-top{
 
 	display:flex;
-	padding:50px 0;
+	flex-direction:column;
+	padding:50px 0 0 0;
 	border-top:1px solid grey;
-	line-height:1.6;
+	line-height:1.4;
+	padding-left:3px;
 
 }
 
 #articles-top section{
-	width:430px;
+	width:100%;
+	margin-bottom:40px;
 
+}
+
+.middle-img{
+	max-width:100%;
 }
 
 #articles-bottom{
 	display:flex;
-	justify-content:space-between;
-	padding:50px 0;
+	flex-direction:column;
+	padding:50px 0 0 0;
 	border-bottom:1px solid grey;
-	line-height:1.6;
+	line-height:1.4;
+	padding-left:3px;
 }
 
 #articles-bottom section{
-	width:285px;
+	width:100%;
+	margin-bottom:40px;
 
 }
 
