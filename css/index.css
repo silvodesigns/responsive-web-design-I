@@ -68,33 +68,45 @@ h1, h2, h3, h4, h5 {
 
 p{
 	font-family: 'Quicksand', sans-serif;
-	font-size:12px;
+	font-size:1em;
 	
 }
 
 header{
-	height:100px;
 	width:100%;
 	background-color:lawngreen;
-	position:fixed;
-	z-index:999;
 	text-align:center;
 	display:flex;
+	flex-direction:column-reverse;
 	justify-content:center;
 	align-items:center;
 }
 
 nav {
 
-	width:500px;
-	vertical-align:top;
-	height:38px;
 	display:flex;
-	justify-content:space-around;
+	flex-direction:column;
+	justify-content:center;
 	align-items:center;
 
 }
+nav ol{
+	width:500px;
+}
 
+nav ol li{
+	
+	border-bottom:1px solid red;
+	line-height: 60px;
+  	height: 60px;
+  	text-align: center;
+	
+}
+
+nav ol:first-child{
+	border-top:1px solid red;
+
+}
 nav a{
 	text-decoration:none;
 	color:blue;
@@ -106,7 +118,7 @@ nav a:hover{
 }
 
 .logo{
-	margin-left:40px;
+	padding:25px 0;
 	
 }
 
@@ -260,9 +272,19 @@ address{
 }
 
 
+/*MOBILE VIEWPORT*/
+
+
+@media(max-width: 500px) {
 
 
 
+
+
+
+
+
+}
 
 
 
