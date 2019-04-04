@@ -72,10 +72,16 @@ p{
 	
 }
 
-header{
+
+header, nav, #display, #articles-top , #articles-bottom{
+	display:flex;
+	flex-direction:column;
+
+}
+
+header.header{
 	width:100%;
 	background-color:lawngreen;
-	display:flex;
 	flex-direction:column-reverse;
 	text-align:center;
 
@@ -83,25 +89,20 @@ header{
 
 nav {
 
-	display:flex;
-	flex-direction:column;
 	justify-content:center;
 	align-items:center;
 
 }
-nav ol{
-	width:100%;
-}
 
-nav ol li{
-	
+nav a{
+	width:100%;
 	border-bottom:1px solid white;
 	line-height: 60px;
   	height: 60px;
 	
 }
 
-nav ol:first-child{
+ nav:first-child{
 	border-top:1px solid white;
 
 }
@@ -135,10 +136,9 @@ h2{
 	font-size:32px;
 }
 #display{
+
 	padding-top:150px;
 	padding-bottom:50px;
-	display:flex;
-	flex-direction:column;
 	justify-content:center;
 	
 }
@@ -167,8 +167,6 @@ h2{
 
 #articles-top{
 
-	display:flex;
-	flex-direction:column;
 	padding:50px 0 0 0;
 	border-top:1px solid grey;
 	line-height:1.4;
@@ -176,7 +174,7 @@ h2{
 
 }
 
-#articles-top section{
+#articles-top section, #articles-bottom section{
 	width:100%;
 	margin-bottom:40px;
 
@@ -187,18 +185,10 @@ h2{
 }
 
 #articles-bottom{
-	display:flex;
-	flex-direction:column;
 	padding:50px 0 0 0;
 	border-bottom:1px solid grey;
 	line-height:1.4;
 	padding-left:3px;
-}
-
-#articles-bottom section{
-	width:100%;
-	margin-bottom:40px;
-
 }
 
 footer{
@@ -252,10 +242,6 @@ address{
 	margin-bottom:40px;
 }
 
-.service_offered p{
-	line-height:1.4;
-}
-
 .service_offered button{
 	width:150px;
 	height:35px;
@@ -268,7 +254,6 @@ address{
 
 #info_services{
 	display:flex;
-	line-height:1.4;
 	margin:40px 0;
 }
 
@@ -282,12 +267,33 @@ address{
 }
 
 
-/*MOBILE VIEWPORT*/
+/*///////////////TABLET VIEWPORT/////////////////////////*/
 
 
-@media(max-width: 500px) {
+@media(min-width: 500px) {
 
+	nav:first-child{
+		border-top:0;
 
+	}
+
+	nav a{
+		border-bottom:0;
+	}
+
+	nav{
+		justify-content:flex-start;
+		
+	}
+
+	nav, #articles-top, #articles-bottom{
+		flex-direction:row;
+	}
+
+	#main-content{
+		width:98%;
+		margin:0 auto;
+	}
 
 
 
