@@ -295,6 +295,9 @@ address{
 		margin:0 auto;
 	}
 
+	#articles-bottom section p{
+		padding:5px;
+	}
 
 
 
@@ -302,6 +305,48 @@ address{
 
 }
 
+/*///////////////DESKTOP VIEWPORT/////////////////////////*/
+
+
+@media(min-width: 800px) {
+
+	header.header{
+		height:100px;
+		width:100%;
+		background-color:lawngreen;
+		position:fixed;
+		z-index:999;
+		text-align:center;
+		justify-content:center;
+		align-items:center;
+		flex-direction:row;
+}
+
+	nav{
+		width:500px;
+		vertical-align:top;
+		height:38px;
+		justify-content:space-around;
+		align-items:center;
+}
+
+
+	#main-content{
+		max-width:876px;
+		margin: auto;
+}
+
+	.logo{
+		margin:0 0 0 40px;
+}
+
+	#display img{
+		display:block;
+	}
+
+	#display{
+		flex-direction:row;
+	}
 
 
 
@@ -310,6 +355,7 @@ address{
 
 
 
+}
 
 
 
